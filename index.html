@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Street Fighter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="tf4micro-motion-kit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="not-supported">
+        This browser does not support bluetooth. Please us Google Chrome or
+        Edge.
+      </div>
+      <section class="intro">
+        <div class="step-1">
+          <h1>Air Street Fighter 💪</h1>
+          <p>
+            Using the
+            <a href="https://store.arduino.cc/arduino-nano-33-ble-sense"
+              >Arduino Nano 33 BLE Sense</a
+            >
+            and <a href="https://www.tensorflow.org/lite">TensorFlow Lite</a>,
+            play this prototype of Street Fighter by moving your arms in the
+            air.
+          </p>
+          <p>
+            To be able to try this experiment, make sure you have the
+            <a
+              href="https://github.com/googlecreativelab/tf4micro-motion-kit/releases/tag/v005"
+              >TF4Micro Motion Kit</a
+            >
+            installed on your Arduino. If you haven't already, follow the
+            <a href="https://github.com/googlecreativelab/tf4micro-motion-kit"
+              >Getting started guide</a
+            >.
+          </p>
+          <div id="connectButtonContainer"></div>
+          <div class="progress-bar">
+            <p>Sending Tensorflow model to your arduino via Bluetooth</p>
+            <progress id="file" max="100" value="0" data-label=""></progress>
+          </div>
+        </div>
+        <div class="step-2">
+          <p>Hold your Arduino in your hand, with the USB port facing down.</p>
+          <p>
+            When you're ready, press start and throw a punch, shoryuken or
+            hadoken in the air!
+          </p>
+          <button class="start">Start</button>
+        </div>
+
+        <div class="mobile-message">
+          <p>
+            Hey there! This demo is not optimised for mobile so if you'd like to
+            try it out, please visit this page on a laptop or desktop computer!
+          </p>
+          <p>In the meantime, here's what this is about:</p>
+          <img src="readme-images/demo.gif" />
+        </div>
+      </section>
+    </main>
+
+    <canvas width="900" height="900"></canvas>
+
+    <footer>
+      Made by <a href="https://charliegerard.dev">Charlie Gerard</a>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

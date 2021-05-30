@@ -1,0 +1,24 @@
+{
+  "name": "air-street-fighter",
+  "version": "1.0.0",
+  "description": "Prototype of Street Fighter game to play with hand movements in the air with an Arduino Nano 33 BLE Sense and TensorFlow Lite",
+  "main": "index.js",
+  "scripts": {
+    "start": "node serve.js"
+  },
+  "keywords": [
+    "arduino",
+    "tensorflow",
+    "tensorflow.js",
+    "tfjs",
+    "tensorflow lite",
+    "creative coding",
+    "javascript",
+    "web bluetooth"
+  ],
+  "author": "Charlie Gerard (https://charliegerard.dev)",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
